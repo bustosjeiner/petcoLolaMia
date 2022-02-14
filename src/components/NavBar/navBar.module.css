@@ -23,11 +23,15 @@
   }
   .nav {
     position: static;
+    width: auto;
+    margin-right: 15px;
+    padding-top: 0;
     height: 60px;
     transform: translateX(0);
   }
   .navClose {
     position: static;
+    margin-right: 15px;
     transform: translateX(0);
   }
   .containerItems {

@@ -17,30 +17,11 @@ const Header = () => {
 
   return (
     <header className={style.header}>
-      <HamburgerMenu
+      <HamburgerMenu 
         mobileMenu = {mobileMenu}
-        onClick = {menu}
+        onClick = {menu} 
       />
-      <NavBar 
-        mobileMenu = {mobileMenu}
-        navItem1 = {
-          <NavBarItem 
-            route = '/home'
-            onClick = {menu}
-            text = 'Inicio'
-            icon = {<FaHome />}
-          />
-        }
-        navItem2 = {
-          <NavBarItem 
-            route = '/store'
-            onClick = {menu}
-            text = 'Tienda'
-            icon = {<FaStoreAlt />}
-          />          
-        }   
-      />
-      {/* <NavBar mobileMenu = {mobileMenu}>
+      <NavBar mobileMenu = {mobileMenu}>
         <NavBarItem 
           route = '/home'
           onClick = {menu}
@@ -53,7 +34,7 @@ const Header = () => {
           text = 'Tienda'
           icon = {<FaStoreAlt />}
         />
-      </NavBar> */}
+      </NavBar>
 
       <div className={style.logo}>
         <Link to = '/home'>
