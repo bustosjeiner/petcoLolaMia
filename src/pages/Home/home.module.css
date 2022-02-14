@@ -10,6 +10,7 @@
 .background {
   width: 100%;
   max-width: 1200px;
+  max-height: 100%;
 }
 .home {
   width: 100%;
