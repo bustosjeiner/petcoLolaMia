@@ -1,0 +1,36 @@
+.containerHome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.background {
+  width: 100%;
+  max-width: 1200px;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+.title {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+.description {
+  width: 90%;
+  max-width: 700px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}

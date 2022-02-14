@@ -1,0 +1,36 @@
+.nav {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: absolute;
+  top: 60px;
+  padding-top: 20px;
+  background-color: #511CB9;
+  transform: translateX(0);
+}
+.navClose {
+  position: absolute;
+  transform: translateX(-100vw);
+}
+.containerItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .containerItems {
+    display: inline-flex;
+  }
+  .nav {
+    position: static;
+    height: 60px;
+    transform: translateX(0);
+  }
+  .navClose {
+    position: static;
+    transform: translateX(0);
+  }
+  .containerItems {
+    flex-direction: row;
+  }
+}

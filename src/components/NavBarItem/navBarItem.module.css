@@ -1,0 +1,34 @@
+.item {
+  width: 100%;
+  cursor: pointer;
+}
+
+.textItem {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  color: white;
+  background-color: #511CB9;
+  border-bottom: 2px solid #E37B00;
+}
+.textItem:hover {
+  color: #E37B00;
+  border-bottom: 2px solid white;
+  transition: all 0.3s;
+}
+.icon {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .icon {
+    display: none;
+  }
+}

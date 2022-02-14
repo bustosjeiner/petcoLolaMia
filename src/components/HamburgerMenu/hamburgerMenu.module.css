@@ -1,0 +1,15 @@
+.containerBurgerMenu {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #511CB9;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .containerBurgerMenu {
+    display: none;
+  }
+}

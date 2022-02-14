@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  z-index: 20;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+  transition: top 0.3s;
+}
+.containerShoppingCart {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (min-width: 800px) {
+  .containerShoppingCart {
+    display: none;
+  }
+  .logo {
+    margin-left: 20px;
+    order: -1;
+  }
+}
