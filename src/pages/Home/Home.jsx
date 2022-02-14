@@ -8,7 +8,7 @@ const Home = () => {
     <main className={style.containerHome}>
       <img 
         src="https://img.etimg.com/thumb/width-640,height-480,imgsize-260682,resizemode-1,msid-48835470/magazines/panache/why-cats-are-more-independent-than-dogs/cat-kitten-dog-puppy_getty_640x480.jpg" 
-        alt="dog and cat image"
+        alt="dog and cat"
         className={style.background}  
       />
       <div className={style.home}>
