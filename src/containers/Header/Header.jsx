@@ -14,6 +14,9 @@ const Header = () => {
   const menu = () => {
     setMobileMenu(!mobileMenu); 
   }
+  const menuItems = () => {
+    setMobileMenu(false);
+  }
 
   return (
     <header className={style.header}>
@@ -24,13 +27,13 @@ const Header = () => {
       <NavBar mobileMenu = {mobileMenu}>
         <NavBarItem 
           route = '/home'
-          onClick = {menu}
+          onClick = {menuItems}
           text = 'Inicio'
           icon = {<FaHome />}
         />
         <NavBarItem 
           route = '/store'
-          onClick = {menu}
+          onClick = {menuItems}
           text = 'Tienda'
           icon = {<FaStoreAlt />}
         />

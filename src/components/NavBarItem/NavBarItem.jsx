@@ -8,7 +8,7 @@ const NavBarItem = (props) => {
     <li className={style.item}>
       <Link 
         to = {route} 
-        onClick = {onClick} 
+        onClick = {() => onClick()} 
         className={style.textItem}
       > 
         <i className={style.icon}>

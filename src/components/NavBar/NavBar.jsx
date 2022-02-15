@@ -4,7 +4,7 @@ import style from './navBar.module.css';
 const NavBar = (props) => {
   const {mobileMenu, children} = props;
   return (
-    <nav className={`${mobileMenu ? style.nav : style.navClose}`}>
+    <nav className={`${style.nav} ${mobileMenu ? style.navOpen : style.navClose}`}>
       <ul className={style.containerItems}>
         {children}
       </ul>

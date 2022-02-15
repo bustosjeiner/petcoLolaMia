@@ -5,10 +5,12 @@
   top: 60px;
   padding-top: 20px;
   background-color: #511CB9;
+  transition: all 0.3s;
+}
+.navOpen {
   transform: translateX(0);
 }
 .navClose {
-  position: absolute;
   transform: translateX(-100vw);
 }
 .containerItems {
@@ -18,21 +20,16 @@
 }
 
 @media screen and (min-width: 800px) {
-  .containerItems {
-    display: inline-flex;
-  }
   .nav {
     position: static;
     width: auto;
-    margin-right: 15px;
+    margin-right: 20px;
     padding-top: 0;
     height: 60px;
     transform: translateX(0);
   }
-  .navClose {
-    position: static;
-    margin-right: 15px;
-    transform: translateX(0);
+  .containerItems {
+    display: inline-flex;
   }
   .containerItems {
     flex-direction: row;
